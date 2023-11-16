@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiv Charitable Trust</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+<body>
+    <div class="container">
+        <nav class="nav mainnav">
+            <img class="logoImg" src="./imgs/logo2.jpg" alt="logo">
+            <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
+            <nav class="nav nav2">
+                <a href="#home">Home</a>
+                <a href="#about">About Us</a>
+                <a href="/achivements.html">achivements</a>
+                <a href="#Gallary">Gallary</a>
+                <a href="#members">Members</a>
+                <a href="#donation">Donation</a>
+                <a href="#contactUs">Contact Us</a>
+            </nav>
+            <a href="#donation">
+                <button class="dntbtn">
+                    Donate now
+                </button>
+            </a>
+        </nav>
+        <div class="swiper mySwiper" id="home">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+              <div></div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div id="about">
+            <div class="title">
+                <span class="title1">About</span>
+                <span class="title2">Us</span>
+            </div>
+            <div class="aboutus">
+                <div>
+                    <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem cum eligendi, asperiores vel veniam placeat eaque voluptas saepe, distinctio molestiae! Iste sapiente recusandae ut, repellat, amet fuga quia alias molestias eaque sint impedit quibusdam quod voluptas magnam autem et, laudantium saepe iusto quis. Perferendis ratione, eum illum culpa tempore necessitatibus vel velit assumenda. Corrupti numquam ab consequuntur nesciunt!</p>
+                    <br>
+                    <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem cum eligendi, asperiores vel veniam placeat eaque voluptas saepe, distinctio molestiae! Iste sapiente recusandae ut, repellat, amet fuga quia alias molestias eaque sint impedit quibusdam quod voluptas magnam autem et, laudantium saepe iusto quis. Perferendis ratione, eum illum culpa tempore necessitatibus vel velit assumenda. Corrupti numquam ab consequuntur nesciunt!</p>
+                </div>
+                <img class="logoImg2" src="./imgs/logo2.jpg" alt="logo">
+            </div>
+        </div>
+        
+        <!-- <div class="default" id="Gallary">
+            Gallary
+        </div>
+        <div class="default" id="members">
+            Members
+        </div> -->
+        <div class="donation" id="donation">
+            <div class="title" >
+                <span class="title1">Donate</span>
+                <span class="title2">here</span>
+            </div>
+            <div class="aboveQrCode">
+                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.424327373072!2d69.09071577361524!3d22.375355540173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3956a3cbfad3b5bb%3A0x65f3adc1c2ad3646!2sSHIV%20FARMHOUSE!5e0!3m2!1sen!2sin!4v1700119574605!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="qrcode donation">
+                    <img class="qr" src="./imgs/qr.jpg" alt="">
+                    <button class="dntbtn">pay to UPI</button>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="default" id="contactUs">
+            contanct Us
+        </div> -->
+        <footer class="nav" style="color: white;">
+            copyrights@2023-2024
+        </footer>
+    </div>
+    <!-- Swiper JS -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+</body>
+</html>
+
+<!--side menu https://codesandbox.io/p/sandbox/yddn27?file=%2Findex.html%3A1%2C1 -->
