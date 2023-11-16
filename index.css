@@ -1,28 +1,33 @@
 html {
     scroll-behavior: smooth;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 :root {
-    --blue: rgb(4,192,253);
-    --blue2: rgb(1,31,62);
-    --white: #ffffff;
+    /* --blue: rgb(4,192,253); */
+    --blue: #00609e;
+    --bg: #f0f0f0;
+    --white: rgb(249, 249, 249);
+    --black: rgb(11, 11, 11);
+    --grey: rgb(111, 111, 111);
 }
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 10px; 
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: var(--bg);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: var(--blue);
+    border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: var(--blue2);
+    background: var(--blue);
 }
 
 .container{
@@ -33,15 +38,16 @@ html {
     margin: 0;
     padding: 0;
 }
+
 .nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:  5px 0;
-    /* gap: 10px; */
-    background-color: var(--blue2);
-    font-size: 1.1rem;
+    padding: 8px 0;
+    background-color: var(--bg);
+    font-size: 1.05rem;
     /* color: ; */
+    height: 70px;
 }
 .mainnav{
     justify-content: space-around;
@@ -49,37 +55,67 @@ html {
     width: 100dvw;
     top: 0px;
     z-index: 10;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+#btn{
+    padding: 10px;
+    overflow: visible;
 }
 .dntbtn{
     background-color: var(--blue);
-    padding: 16px;
+    font-family: 'Roboto Condensed', sans-serif;
+    padding: 12px 24px;
     border-radius: 8px;
-    color: white;
+    color: var(--white);
+    font-weight: 600;
     font-size: 1.01rem;
     transition: all .4s;
-    border: none;
+    border: 4px solid transparent;
 }
 .dntbtn:hover{
     cursor: pointer;
-    box-shadow: 1px 1px  var(--blue);
-    background-color: var(--blue2);
+    border: 4px solid rgb(0, 158, 210);
+    transform: scale(1.1);
+    /* background-color: rgb(60, 206, 255); */
 }
 .nav2{
     gap: 16px;
-    position: sticky;
-    top: 0;
 }
-.nav a {
+.nav2 a {
     text-decoration: none;
-    color: white;
+    text-transform: uppercase;
+    color: var(--grey);
+    transition: all .5s;
+    padding: 32px 8px;
+    transition: all .25s;
+    border-bottom: 5px solid transparent;
 }
-.nav a:hover{
-    color: var(--blue);
+
+#navactive{
+    border-bottom: 5px solid var(--blue);
+    color: var(--black);
+    font-weight: 500;
+}
+.nav2 a:hover{
+    color: var(--black);
+    border-bottom: 5px solid var(--blue);
+    background-color: rgba(0, 159, 212, 0.2);
 }
 .logoImg{
     height: 70px;
     border-radius: 100%;
 }
+
+.logomark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
 /* main{
     height: 80vh;
 } */
@@ -112,7 +148,6 @@ html,body {
 }
 body {
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;
@@ -143,12 +178,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 50px;
+    padding: 0px calc(100vw - 90%);
+    text-align: justify;
 }
 .logoImg2{
     /* height: 300px; */
     width: 300px;
-    padding: 50px;
+    margin-left: 100px;
     transition: all 1s;
     border-radius: 100%;
 }
@@ -157,19 +193,17 @@ body {
 }
 .title{
     padding: 30px;
-    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    font-weight: bold;
+    color: var(--black);
+    font-size: 2rem;
 }
 .title1{
-    color: var(--blue);
-    font-size: 3rem;
 }
 .title2{
-    color: var(--blue2);
-    font-size: 3rem;
 }
 
 .qrcode{
@@ -205,7 +239,6 @@ body {
 
 /* #achivements{
     background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 14px;
     color: #000;
     margin: 0;

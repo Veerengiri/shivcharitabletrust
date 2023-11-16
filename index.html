@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,22 @@
     <link rel="stylesheet" href="./index.css">
 </head>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+
 <body>
     <div class="container">
         <nav class="nav mainnav">
-            <img class="logoImg" src="./imgs/logo2.jpg" alt="logo">
+            <div class="logomark">
+                <img class="logoImg" src="./imgs/logosmall.png" alt="logo">
+                Shree Shiv<br>Education and<br>Charitable Trust
+            </div>
             <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
             <nav class="nav nav2">
-                <a href="#home">Home</a>
+                <a href="#home" id="navactive">Home</a>
                 <a href="#about">About Us</a>
                 <a href="/achivements.html">achivements</a>
                 <a href="#Gallary">Gallary</a>
@@ -22,19 +31,20 @@
                 <a href="#donation">Donation</a>
                 <a href="#contactUs">Contact Us</a>
             </nav>
-            <a href="#donation">
+            <a href="#donation" id="btn">
                 <button class="dntbtn">
-                    Donate now
+                    Donate Now
                 </button>
             </a>
         </nav>
+
         <div class="swiper mySwiper" id="home">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
                 <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
                 <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
                 <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
-              <div></div>
+                <div></div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -47,14 +57,27 @@
             </div>
             <div class="aboutus">
                 <div>
-                    <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem cum eligendi, asperiores vel veniam placeat eaque voluptas saepe, distinctio molestiae! Iste sapiente recusandae ut, repellat, amet fuga quia alias molestias eaque sint impedit quibusdam quod voluptas magnam autem et, laudantium saepe iusto quis. Perferendis ratione, eum illum culpa tempore necessitatibus vel velit assumenda. Corrupti numquam ab consequuntur nesciunt!</p>
+                    <p style="font-size: 1.2rem;">We are a non-profit charitable trust dedicated to making a positive
+                        impact on the lives of those in need. Since our inception in 2003, we have been working
+                        tirelessly to provide education, cow welfare, and other charitable services to the communities
+                        in Mithapur, Dwarka, Gujarat.</p>
                     <br>
-                    <p style="font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolorem cum eligendi, asperiores vel veniam placeat eaque voluptas saepe, distinctio molestiae! Iste sapiente recusandae ut, repellat, amet fuga quia alias molestias eaque sint impedit quibusdam quod voluptas magnam autem et, laudantium saepe iusto quis. Perferendis ratione, eum illum culpa tempore necessitatibus vel velit assumenda. Corrupti numquam ab consequuntur nesciunt!</p>
+                    <p style="font-size: 1.2rem;">
+                        <b>Our Mission</b><br><br>
+
+                        Our mission is to provide educational opportunities for children, promote cow welfare, and
+                        support underserved communities. We believe that education is the key to breaking the cycle of
+                        poverty and creating a brighter future for children. We also believe that cows are gentle and
+                        intelligent creatures that deserve to be treated with respect and compassion. We are committed
+                        to working with communities to improve the lives of cows and promote sustainable cow care
+                        practices.
+
+                    </p>
                 </div>
-                <img class="logoImg2" src="./imgs/logo2.jpg" alt="logo">
+                <img class="logoImg2" src="./imgs/logomain.png" alt="logo">
             </div>
         </div>
-        
+
         <!-- <div class="default" id="Gallary">
             Gallary
         </div>
@@ -62,13 +85,16 @@
             Members
         </div> -->
         <div class="donation" id="donation">
-            <div class="title" >
+            <div class="title">
                 <span class="title1">Donate</span>
                 <span class="title2">here</span>
             </div>
             <div class="aboveQrCode">
-                <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.424327373072!2d69.09071577361524!3d22.375355540173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3956a3cbfad3b5bb%3A0x65f3adc1c2ad3646!2sSHIV%20FARMHOUSE!5e0!3m2!1sen!2sin!4v1700119574605!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.424327373072!2d69.09071577361524!3d22.375355540173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3956a3cbfad3b5bb%3A0x65f3adc1c2ad3646!2sSHIV%20FARMHOUSE!5e0!3m2!1sen!2sin!4v1700119574605!5m2!1sen!2sin"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 <div class="qrcode donation">
                     <img class="qr" src="./imgs/qr.jpg" alt="">
                     <button class="dntbtn">pay to UPI</button>
@@ -82,30 +108,33 @@
             copyrights@2023-2024
         </footer>
     </div>
+
+
     <!-- Swiper JS -->
-    
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-  </script>
-  
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
 </body>
+
 </html>
 
 <!--side menu https://codesandbox.io/p/sandbox/yddn27?file=%2Findex.html%3A1%2C1 -->
