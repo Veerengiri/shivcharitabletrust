@@ -169,13 +169,40 @@ body {
     margin-top: 0;
 }
 .swiper-slide {
+    position: relative;
     text-align: center;
     font-size: 18px;
-    background: #fff;
+    /* background: #fff; */
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+.swiper-slide p {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(transparent,black);
+    height: 58px;
+    width: 100%;
+    text-align: left;
+    padding: 0px 24px;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+}
+
+/* .swiper-slide::after{
+    content: 'Child Education';
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent,black);
+} */
 .swiper-slide2{
     text-align: center;
     font-size: 18px;
