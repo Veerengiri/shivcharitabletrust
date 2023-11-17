@@ -10,9 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <style>
         html {
             font-family: 'Roboto Condensed', sans-serif;
+            margin: 0;
+            padding: 0;
         }
 
         input::-webkit-outer-spin-button,
@@ -21,21 +25,35 @@
             margin: 0;
         }
 
+        body {
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 100vw;
+            height: auto;
+            flex-direction: column;
+        }
+
         .container {
+            position: relative;
             display: flex;
             flex-direction: column;
             width: fit-content;
             height: max-content;
-            background-color: rgb(247, 247, 247);
+            background-color: rgba(247, 247, 247, .9);
             padding: 16px;
             border-radius: 8px;
             box-shadow: 0 10px 50px rgba(0, 95, 158, 0.2);
+            transform: scale(1.5);
+            transform-origin: right;
+            margin: 0 48px;
         }
 
         .amountbox {
             display: grid;
             grid-template-columns: repeat(3, auto);
-            background-color: #cecece;
+            background-color: rgb(207, 207, 207);
             padding: 16px;
             gap: 16px;
             border-radius: 8px;
@@ -60,10 +78,12 @@
             grid-column-end: 4;
         }
 
-        #amtinput {
+        #amtinput,
+        input,
+        #gender {
             border-radius: 4px;
             outline: none;
-            border: none;
+            border: 1px solid rgb(192, 192, 192);
             padding: 0 16px;
             font-family: 'Roboto Condensed', sans-serif;
         }
@@ -82,26 +102,197 @@
         #donatebtn:hover {
             transform: none;
         }
+
+        form {
+            position: relative;
+            border: 1.5px solid rgb(192, 192, 192);
+            background-color: rgb(247, 247, 247);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 16px;
+            max-width: 500px;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 10px 50px rgba(0, 95, 158, 0.2);
+            margin-top: 48px;
+
+        }
+
+        form>span {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            border-radius: 4px;
+            padding: 2px;
+            opacity: .5;
+            transition: all .3s;
+        }
+
+        form>span:hover {
+            cursor: pointer;
+            opacity: 1;
+            background-color: rgba(192, 192, 192, 0.25);
+        }
+
+        form h2 {
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        form label {
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            gap: 4px;
+        }
+
+        form label span {
+            color: rgb(192, 0, 0);
+        }
+
+        form label input,
+        #gender {
+            padding: 8px 8px;
+            font-size: 1rem;
+        }
+
+        form #checkboxlabel {
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 16px;
+            text-align: justify;
+        }
+
+        input.checkbox {
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .main {
+            position: relative;
+            /* overflow: hidden; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 500px;
+            background: url(https://images.unsplash.com/photo-1638447752276-798e409adebb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-y: -200px;
+        }
+
+        .main h1 {
+            color: white;
+            max-width: 450px;
+            text-align: left;
+            font-size: 3rem;
+            line-height: 70px;
+            margin: 0 48px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <div class="amountbox">
-            <span>₹500</span>
-            <span>₹1000</span>
-            <span>₹2000</span>
+    <div class="main">
+        <!-- <img src="https://images.unsplash.com/photo-1638447752276-798e409adebb?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""> -->
+        <h1>Cows: The backbone of our culture, preserve their welfare.</h1>
+        <div class="container">
+            <div class="amountbox">
+                <span>₹500</span>
+                <span>₹1000</span>
+                <span>₹2000</span>
+                <span>₹</span>
+                <input type="number" id="amtinput" placeholder="Enter Other Amount">
 
-            <span>₹</span>
-            <input type="number" id="amtinput" placeholder="Enter Other Amount">
-
+            </div>
+            <a href="#" id="btn">
+                <button class="dntbtn" id="donatebtn">
+                    Donate Now
+                </button>
+            </a>
         </div>
+
+    </div>
+
+    <form action="">
+        <span class="material-symbols-outlined close">
+            close
+        </span>
+        <h2>Let's donate to make a difference together.</h2>
+        <label for="amtinput">
+            <p>
+                Amount<span> *</span>
+            </p>
+            <input type="number" placeholder="" required>
+        </label>
+
+        <label for="name">
+            <p>
+                Full Name<span> *</span>
+            </p>
+            <input type="text" placeholder="Full Name" required>
+        </label>
+
+        <label for="mobilenum">
+            <p>
+                Mobile Number<span> *</span>
+            </p>
+            <input type="tel" placeholder="Mobile Number" required>
+        </label>
+
+        <label for="email">
+            <p>
+                Email<span> *</span>
+            </p>
+            <input type="email" placeholder="Email" required>
+        </label>
+
+        <label for="gender">
+            <p>
+                Gender<span> *</span>
+            </p>
+            <select name="gender" id="gender" required>
+                <option value="Male" selected>Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </label>
+
+        <label for="state">
+            <p>
+                State<span> *</span>
+            </p>
+            <input type="text" name="state" id="state" placeholder="State" required>
+        </label>
+
+        <label for="City">
+            <p>
+                Town/City<span> *</span>
+            </p>
+            <input type="city" name="city" id="city" placeholder="Town/City" required>
+        </label>
+
+        <label for="pincode">
+            <p>
+                PIN Code<span> *</span>
+            </p>
+            <input type="pincode" name="pincode" id="pincode" placeholder="PIN Code" required>
+        </label>
+        <label for="checkbox" id="checkboxlabel">
+            <input type="checkbox" name="checkbox" class="checkbox" required> I agree that all information I have
+            provided in this donation form is accurate and complete. Please note that we are not responsible for the
+            correctness of the
+            information you provide. It is your responsibility to ensure that the information is accurate and complete.
+        </label>
         <a href="#" id="btn">
             <button class="dntbtn" id="donatebtn">
                 Donate Now
             </button>
         </a>
-    </div>
+    </form>
 </body>
 
 </html>
