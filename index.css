@@ -224,8 +224,10 @@ body {
     font-size: 2rem;
 }
 .title1{
+    color: var(--blue);
 }
 .title2{
+    
 }
 
 .qrcode{
