@@ -24,19 +24,20 @@
             </div>
             <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
             <nav class="nav nav2">
-                <a href="#home" id="navactive">Home</a>
+                <a href="#home">Home</a>
                 <a href="#about">About Us</a>
-                <a href="/achivements.html">achivements</a>
                 <a href="#Gallary">Services</a>
-                <a href="/members.html">Members</a>
+                <a href="#achivements">achivements</a>
+                <a href="#members">Members</a>
                 <a href="#donation">Donation</a>
                 <a href="#contactUs">Contact Us</a>
             </nav>
-            <a href="#donation" id="btn">
-                <button class="dntbtn">
-                    Donate Now
-                </button>
-            </a>
+            <div  id="btn" style="display: flex;justify-content: center;align-items: center;">
+                <a id="dntbtn" class="dntbtn" href="#donation" style="margin-right: 20px; text-decoration: none;">
+                    Contribute
+                </a>
+                <img src="./imgs/icons/menu.png" height="40px" >
+            </div>
         </nav>
 
 
@@ -108,6 +109,67 @@
 
         </div>
 
+        <!-- CERTIFICATES -->
+        <div id="achivements">
+            <div class="title" style="margin-bottom: 0;" >
+                <span class="title1">Our</span>
+                <span class="title2">Achivements</span>
+            </div>
+            <div class="swiper3 mySwiper3" style="margin-bottom: 50px; overflow-x: hidden;">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide3">
+                    <img src="https://cdn.vectorstock.com/i/1000x1000/13/25/vertical-modern-certificate-template-vector-28951325.webp" />
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-vertical-certificate-of-completion-tem-design-template-0207909b7d8e5335166de993ac8b1f22_screen.jpg?ts=1646483065" />
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <img src="https://www.shutterstock.com/shutterstock/photos/1540430987/display_1500/stock-vector-vertical-certificate-template-with-ribbon-with-halftone-pattern-and-textured-background-1540430987.jpg" />
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vertical-certificate-of-appreciation-template-design-2c5f848bd264516b4f3cda4df9d3f6fd_screen.jpg?ts=1672663137" />
+                  </div>
+                  <div class="swiper-slide swiper-slide3">
+                    <img src="https://previews.123rf.com/images/kitipol/kitipol1609/kitipol160900031/63887241-vertical-certificate-template-diploma-letter-size-vector.jpg" />
+                  </div>
+                </div>
+                <div class="swiper-pagination3"></div>
+            </div>
+        </div>
+        
+        <!-- Turst Members -->
+        <div id="members">
+            <div class="title" >
+                <span class="title1">Trust</span>
+                <span class="title2">Members</span>
+            </div>
+            <div class="swiper4 mySwiper4">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide4">
+                    <img src="./imgs/members/member1.jpg">
+                    <div class="memname">
+                        <b>Umedgiri Goswami</b>
+                        <span>Lead</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide4">
+                    <img src="./imgs/members/member2.png">
+                    <div class="memname">
+                        <b>Hardikgiri Goswami</b>
+                        <span>member1</span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide4">
+                    <img src="./imgs/members/member3.jpg">
+                    <div class="memname">
+                        <b>Yogeshgiri Goswami</b>
+                        <span>Member2</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+
         <!-- DONATION -->
         <div class="donation" id="donation">
             <div class="title">
@@ -135,7 +197,7 @@
             <div class="cuCnt">
                 <div style="display: flex; gap: 10px;">
                     <img src="./imgs/icons/phone-call.png" alt="">
-                    <p>+91 6352447074</p>
+                    <p>+91 1234567891</p>
                 </div>
                 <div style="display: flex; gap: 10px;">
                     <img src="./imgs/icons/apple.png" alt="">
@@ -189,6 +251,28 @@
         clickable: true,
         dynamicBullets: true,
       },
+    });
+    var swiper3 = new Swiper(".mySwiper3", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination3",
+            dynamicBullets: true,
+            clickable: true,
+        },
+    });
+    var swiper4 = new Swiper(".mySwiper4", {
+        effect: "cards",
+        grabCursor: true,
     });
   </script>
 
