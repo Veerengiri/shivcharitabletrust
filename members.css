@@ -1,0 +1,112 @@
+:root {
+    --blue: rgb(4,192,253);
+    --blue2: rgb(1,31,62);
+    --white: #ffffff;
+}
+.title{
+    /* padding: 30px; */
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 0;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    /* margin-left: -30px; */
+}
+.title1{
+    color: var(--blue);
+    font-size: 3rem;
+}
+.title2{
+    color: var(--blue2);
+    font-size: 3rem;
+}
+.homeBtn{
+    background-color: var(--blue);
+    border: none;
+    padding: 0px;
+    border-radius: 100%;
+    height: 50px;
+    margin: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.homeBtn:hover{
+    padding: 2px;
+}
+html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      /* background: #fff; */
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    
+
+    .swiper {
+      width: 240px;
+      height: 320px;
+      margin-left: -20px;
+      scale: 1.4 !important;
+    }
+    
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 18px;
+      font-size: 22px;
+      font-weight: bold;
+      color: black;
+      /* background-color: white; */
+      /* border: 2px solid var(--blue); */
+    }
+    .swiper-slide:hover  img{
+        scale: 1.05;
+    }
+    .swiper-slide img{
+        transition: all .5s;
+        object-fit: cover;
+        height: 320px;
+        width: 240px;
+    }
+    .swiper-slide b{
+        text-align: center;
+        width: 240px;
+        font-weight: normal;
+    }
+    .swiper-slide span{
+        display: block;
+        width: 240px;
+        font-weight: lighter;
+        font-size: small;
+    }
+    .memname{
+        background-color: rgba(0, 0, 0, 0.573);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 10px;
+        color: white;
+    }
+
+    @media only screen and (max-width: 600px ) {
+        .swiper {
+            scale: 1 !important;
+        }
+        .title{
+            padding-bottom: 0;
+        }
+    }

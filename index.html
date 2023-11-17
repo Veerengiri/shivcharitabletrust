@@ -16,6 +16,7 @@
 
 <body>
     <div class="container">
+        <!-- NAVBAR -->
         <nav class="nav mainnav">
             <div class="logomark">
                 <img class="logoImg" src="./imgs/logosmall.png" alt="logo">
@@ -26,8 +27,8 @@
                 <a href="#home" id="navactive">Home</a>
                 <a href="#about">About Us</a>
                 <a href="/achivements.html">achivements</a>
-                <a href="#Gallary">Gallary</a>
-                <a href="#members">Members</a>
+                <a href="#Gallary">Services</a>
+                <a href="/members.html">Members</a>
                 <a href="#donation">Donation</a>
                 <a href="#contactUs">Contact Us</a>
             </nav>
@@ -37,6 +38,7 @@
                 </button>
             </a>
         </nav>
+
 
         <div class="swiper mySwiper" id="home">
             <div class="swiper-wrapper">
@@ -50,6 +52,8 @@
             <div class="swiper-button-prev"></div>
             <div class="swiper-pagination"></div>
         </div>
+        
+        <!-- ABOUT US -->
         <div id="about">
             <div class="title">
                 <span class="title1">About</span>
@@ -77,13 +81,48 @@
                 <img class="logoImg2" src="./imgs/logomain.png" alt="logo">
             </div>
         </div>
+        <!-- IMAGE GALLERY -->
+        <div id="Gallary">
+            <div class="title" style="margin-bottom: 50px; margin-top: 0;">
+                <span class="title1">Our</span>
+                <span class="title2">Services</span>
+            </div>
+            <div class="swiper2 mySwiper2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                  <div></div>
+                </div>
+                <div style="margin-top: 10px;" class="swiper-pagination2"></div>
+            </div>
 
-        <!-- <div class="default" id="Gallary">
-            Gallary
         </div>
-        <div class="default" id="members">
-            Members
-        </div> -->
+
+        <!-- DONATION -->
         <div class="donation" id="donation">
             <div class="title">
                 <span class="title1">Donate</span>
@@ -101,9 +140,29 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="default" id="contactUs">
-            contanct Us
-        </div> -->
+
+        <!-- CONTACT US -->
+        <div class="default" id="contactUs">
+            <div class="title" >
+                <span class="title1">Contact</span>
+                <span class="title2">us</span>
+            </div>
+            <div class="cuCnt">
+                <div style="display: flex; gap: 10px;">
+                    <img src="./imgs/icons/phone-call.png" alt="">
+                    <p>+91 6352447074</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <img src="./imgs/icons/apple.png" alt="">
+                    <p>shivcharitabletrust@gmail.com</p>
+                </div>
+                <div style="display: flex; gap: 10px;">
+                    <img src="./imgs/icons/location.png" alt="">
+                    <p>Gopi tadav, Dwarka, Gujarat 395002 </p>
+                </div>
+            </div>
+        </div>
+
         <footer class="nav" style="color: white;">
             copyrights@2023-2024
         </footer>
@@ -113,25 +172,40 @@
     <!-- Swiper JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            spaceBetween: 30,
-            centeredSlides: true,
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        });
-    </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    var swiper = new Swiper(".mySwiper2", {
+      spaceBetween: 5,
+      centeredSlides: true,
+      autoplay: {
+        delay: 1500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination2",
+        clickable: true,
+        dynamicBullets: true,
+      },
+    });
+  </script>
 
 </body>
 

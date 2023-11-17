@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./members.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Members Shiv Charitable Trust</title>
+</head>
+<body>
+    <a href="./index.html"><img src="./imgs/home.png" class="homeBtn"/></a>
+    <div class="title" >
+        <span class="title1">Trust</span>
+        <span class="title2">Members</span>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./imgs/members/member1.jpg">
+            <div class="memname">
+                <b>Umedgiri Goswami</b>
+                <span>Lead</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/members/member2.png">
+            <div class="memname">
+                <b>Hardikgiri Goswami</b>
+                <span>member1</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./imgs/members/member3.jpg">
+            <div class="memname">
+                <b>Yogeshgiri Goswami</b>
+                <span>Member2</span>
+            </div>
+          </div>
+          
+          
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        effect: "cards",
+        grabCursor: true,
+        });
+    </script>
+</body>
+</html>
