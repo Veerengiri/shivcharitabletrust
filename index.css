@@ -338,7 +338,6 @@ body {
     padding: 0px calc(100vw - 90%);
     /* margin-left: 50px; */
     justify-content: center;
-    
 }
 .cuCnt p{
     font-size: 1.4rem;
@@ -502,9 +501,63 @@ color: black;
     transform: translateY(500px);
     transition: transform 0.5s ease-in-out;
 }
+#close{
+    display: none;
+}
+#dntbtn4{
+    display: none;
+}
 @media only screen and (max-width: 1150px ){
     .nav2{
+        /* display: none; */
+        background-color: var(--bg);
+        top: 0;
+    }
+    #dntbtn4{
+        /* width: 80% !important; */
+        display: flex;
+        scale: 0.8 !important;
+        margin-left: -20px;
+    }
+    #close{
+        display: flex;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: transparent;
+        color: black;
+        padding: 5px 10px;
+        border-radius: 100%;
+        scale: 1.5;
+    }
+    #slidenav{
         display: none;
+        padding-top: 50px;
+        position: absolute;
+        /* right: -100%; */
+        z-index: 100;
+        right: 0;
+        top: 0;
+        height: 100dvh;
+        /* display: flex; */
+        justify-content: start;
+        width: 25%;
+        gap: 0;
+        flex-direction: column;
+        overflow: hidden;
+    }
+    #slidenav a{
+        background-color: var(--bg);
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        margin: 0;
+        padding: 10px;
+        margin-left: -20px;
+    }
+    #slidenav a:hover, #slidenav a:active{
+        background-color: rgb(218, 218, 218);
     }
     #btn img{
         display: block !important;
@@ -514,7 +567,6 @@ color: black;
         padding-left: 20px;
         padding-right: 20px;
         width: 97dvw;
-
     }
     .toggleicon{
         display: unset;
@@ -522,9 +574,9 @@ color: black;
     .logoImg2{
         margin-left: 20px;
     }
-    .aboutus{
-        /* padding: 50px */
-    }
+    /* .aboutus{
+        padding: 50px
+    } */
     .qr{
         width: 250px;
         
@@ -542,8 +594,14 @@ color: black;
         margin-top: 70px;
         height: 60dvh;
     }
+    #slidenav{
+        width: 35%;
+    }
 }
 @media only screen and (max-width: 800px) {
+    #slidenav{
+        width: 45%;
+    }
     .aboutus{
         flex-direction: column;
     }
@@ -575,6 +633,13 @@ color: black;
 }
 @media only screen and (max-width: 500px) {
     #dntbtn{
+        display: none;
+    }
+    #slidenav{
+        width: 100%;
+        top: 80px;
+    }
+    #close{
         display: none;
     }
     .swiper {

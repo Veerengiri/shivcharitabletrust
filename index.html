@@ -17,6 +17,31 @@
             rel="stylesheet">
         <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     </head>
+    <script>
+        // let isstable = 
+        let isnavmin = window.innerWidth>1050? false: true;
+        function closenav (){
+            document.getElementById('slidenav').style.display='none';
+        }
+        function opennav (){
+            if(document.getElementById('slidenav').style.display=="flex"){
+                document.getElementById('slidenav').style.display='none'
+            }else{
+                document.getElementById('slidenav').style.display='flex';
+            }
+        }
+        function st(id,scrollpixel){
+            if(isnavmin){
+                document.getElementById('slidenav').style.display='none';
+            }  
+            const targetElement = document.getElementById(id);
+            targetElement.scrollIntoView();
+            setTimeout(() => {
+                const targetElement = document.getElementById(id);
+                targetElement.scrollIntoView();
+            }, 1000);
+        }
+    </script>
     <body>
         <div class="cuCnt2">
             <a href="https://instagram.com" target="_blank" style="display: flex; gap: 10px;">
@@ -36,26 +61,30 @@
         <!-- <div class="sttbtn2" ><img height="50px" src="./imgs/icons/youtube.png" alt="scroll to Top"></div> -->
         <div class="container">
             <!-- NAVBAR -->
-            <nav class="nav mainnav">
+            <nav class="nav mainnav" >
                 <div class="logomark">
                     <img class="logoImg" src="./imgs/logosmall.png" alt="logo">
                     Shree Shiv<br>Education and<br>Charitable Trust
                 </div>
                 <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
-                <nav class="nav nav2">
-                    <a href="#home">Home</a>
-                    <a href="#about">About Us</a>
-                    <a href="#Gallary">Services</a>
-                    <a href="#achivements">achivements</a>
-                    <a href="#members">Members</a>
-                    <a href="#partners">Partners</a>
-                    <a href="#contactUs">Contact Us</a>
+                <nav class="nav nav2" id="slidenav">
+                    <span id="close" onclick="closenav()" class="material-symbols-outlined close" >X</span>
+                    <a onclick="st('home',0)">Home</a>
+                    <a onclick="st('about',300)">About Us</a>
+                    <a onclick="st('Gallary',500)">Services</a>
+                    <a onclick="st('achivements',500)">achivements</a>
+                    <a onclick="st('members',500)">Members</a>
+                    <a onclick="st('testimonials',500)">Testimonials</a>
+                    <a onclick="st('contactUs',500)">Contact Us</a>
+                    <button id="dntbtn4"  onclick="st('donation',500)" class="dntbtn" >
+                        Contribute
+                    </button>
                 </nav>
                 <div  id="btn" style="display: flex;justify-content: center;align-items: center;">
                     <a id="dntbtn" class="dntbtn" href="#donation" style="margin-right: 20px; text-decoration: none;">
                         Contribute
                     </a>
-                    <img src="./imgs/icons/menu.png" height="40px" >
+                    <img src="./imgs/icons/menu.png" onclick="opennav()" height="40px" >
                 </div>
             </nav>
 
