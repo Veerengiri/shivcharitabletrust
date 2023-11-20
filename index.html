@@ -1,300 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shiv Charitable Trust</title>
-    <link rel="stylesheet" href="./index.css">
-    <link rel="shortcut icon" href="./imgs/logomain.png">
-    <meta name="description" content="We are a non-profit charitable trust dedicated to making a positive
-    impact on the lives of those in need. Since our inception in 2003, we have been working
-    tirelessly to provide education, cow welfare, and other charitable services to the communities
-    in Mithapur, Dwarka, Gujarat.">
-</head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
-<!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-
-<body>
-    <div class="container">
-        <!-- NAVBAR -->
-        <nav class="nav mainnav">
-            <div class="logomark">
-                <img class="logoImg" src="./imgs/logosmall.png" alt="logo">
-                Shree Shiv<br>Education and<br>Charitable Trust
-            </div>
-            <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
-            <nav class="nav nav2">
-                <a href="#home">Home</a>
-                <a href="#about">About Us</a>
-                <a href="#Gallary">Services</a>
-                <a href="#achivements">achivements</a>
-                <a href="#members">Members</a>
-                <a href="#partners">Partners</a>
-                <a href="#contactUs">Contact Us</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shiv Charitable Trust</title>
+        <link rel="stylesheet" href="./index.css">
+        <link rel="shortcut icon" href="./imgs/logomain.png">
+        <meta name="description" content="We are a non-profit charitable trust dedicated to making a positive
+        impact on the lives of those in need. Since our inception in 2003, we have been working
+        tirelessly to provide education, cow welfare, and other charitable services to the communities
+        in Mithapur, Dwarka, Gujarat.">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
+    </head>
+    <body>
+        <div class="cuCnt2">
+            <a href="https://instagram.com" target="_blank" style="display: flex; gap: 10px;">
+                <img src="./imgs/icons/instagram.png" alt="Insta">
+            </a>
+            <a href="https://facebook.com" target="_blank" style="display: flex; gap: 10px;">
+                <img src="./imgs/icons/facebook.png" alt="facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank" style="display: flex; gap: 10px; background-color:white;">
+                <img style="scale: 1.05; height: 30px;" src="./imgs/icons/twitter.png" alt="X">
+            </a>
+            <a href="https://youtube.com" target="_blank" style="display: flex; gap: 10px;">
+                <img src="./imgs/icons/youtube.png" alt="X">
+            </a>
+        </div>
+        <a href="#home" id="sttbtn" class="sttbtn"><img height="50px" src="./imgs/arrow-up.png" alt="scroll to Top"></a>
+        <!-- <div class="sttbtn2" ><img height="50px" src="./imgs/icons/youtube.png" alt="scroll to Top"></div> -->
+        <div class="container">
+            <!-- NAVBAR -->
+            <nav class="nav mainnav">
+                <div class="logomark">
+                    <img class="logoImg" src="./imgs/logosmall.png" alt="logo">
+                    Shree Shiv<br>Education and<br>Charitable Trust
+                </div>
+                <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
+                <nav class="nav nav2">
+                    <a href="#home">Home</a>
+                    <a href="#about">About Us</a>
+                    <a href="#Gallary">Services</a>
+                    <a href="#achivements">achivements</a>
+                    <a href="#members">Members</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#contactUs">Contact Us</a>
+                </nav>
+                <div  id="btn" style="display: flex;justify-content: center;align-items: center;">
+                    <a id="dntbtn" class="dntbtn" href="#donation" style="margin-right: 20px; text-decoration: none;">
+                        Contribute
+                    </a>
+                    <img src="./imgs/icons/menu.png" height="40px" >
+                </div>
             </nav>
-            <div  id="btn" style="display: flex;justify-content: center;align-items: center;">
-                <a id="dntbtn" class="dntbtn" href="#donation" style="margin-right: 20px; text-decoration: none;">
-                    Contribute
-                </a>
-                <img src="./imgs/icons/menu.png" height="40px" >
-            </div>
-        </nav>
 
-
-        <div class="swiper mySwiper" id="home">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
-                <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
-                <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
-                <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
-                <div></div>
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
-        </div>
-
-        <!-- ABOUT US -->
-        <div id="about">
-            <div class="title">
-                <span class="title1">About</span>
-                <span class="title2">Us</span>
-            </div>
-            <div class="aboutus">
-                <div>
-                    <p style="font-size: 1.2rem;">We are a non-profit charitable trust dedicated to making a positive
-                        impact on the lives of those in need. Since our inception in 2003, we have been working
-                        tirelessly to provide education, cow welfare, and other charitable services to the communities
-                        in Mithapur, Dwarka, Gujarat.</p>
-                    <br>
-                    <p style="font-size: 1.2rem;">
-                        <b>Our Mission</b><br><br>
-
-                        Our mission is to provide educational opportunities for children, promote cow welfare, and
-                        support underserved communities. We believe that education is the key to breaking the cycle of
-                        poverty and creating a brighter future for children. We also believe that cows are gentle and
-                        intelligent creatures that deserve to be treated with respect and compassion. We are committed
-                        to working with communities to improve the lives of cows and promote sustainable cow care
-                        practices.
-
-                    </p>
-                </div>
-                <img class="logoImg2" src="./imgs/logomain.png" alt="logo">
-            </div>
-        </div>
-        <!-- IMAGE GALLERY -->
-        <div id="Gallary">
-            <div class="title" style=" margin-top: 0;">
-                <span class="title1">Our</span>
-                <span class="title2">Services</span>
-            </div>
-            <div class="swiper2 mySwiper2">
+            <div class="swiper mySwiper" id="home">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
                     <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
                     <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
                     <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
-                    <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
-                  <div></div>
+                    <div></div>
                 </div>
-                <div style="margin-top: 10px;" class="swiper-pagination2"></div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
             </div>
 
-        </div>
-
-        <!-- CERTIFICATES -->
-        <div id="achivements">
-            <div class="title" style="margin-bottom: 0;" >
-                <span class="title1">Our</span>
-                <span class="title2">Achivements</span>
-            </div>
-            <div class="swiper3 mySwiper3" style="margin-bottom: 50px; overflow-x: hidden;">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-slide3">
-                    <img src="https://cdn.vectorstock.com/i/1000x1000/13/25/vertical-modern-certificate-template-vector-28951325.webp" />
-                  </div>
-                  <div class="swiper-slide swiper-slide3">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-vertical-certificate-of-completion-tem-design-template-0207909b7d8e5335166de993ac8b1f22_screen.jpg?ts=1646483065" />
-                  </div>
-                  <div class="swiper-slide swiper-slide3">
-                    <img src="https://www.shutterstock.com/shutterstock/photos/1540430987/display_1500/stock-vector-vertical-certificate-template-with-ribbon-with-halftone-pattern-and-textured-background-1540430987.jpg" />
-                  </div>
-                  <div class="swiper-slide swiper-slide3">
-                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vertical-certificate-of-appreciation-template-design-2c5f848bd264516b4f3cda4df9d3f6fd_screen.jpg?ts=1672663137" />
-                  </div>
-                  <div class="swiper-slide swiper-slide3">
-                    <img src="https://previews.123rf.com/images/kitipol/kitipol1609/kitipol160900031/63887241-vertical-certificate-template-diploma-letter-size-vector.jpg" />
-                  </div>
+            <!-- ABOUT US -->
+            <div id="about">
+                <div class="title">
+                    <span class="title1">About</span>
+                    <span class="title2">Us</span>
                 </div>
-                <div class="swiper-pagination3"></div>
-            </div>
-        </div>
-        
-        <!-- Turst Members -->
-        <div id="members">
-            <div class="title" >
-                <span class="title1">Trust</span>
-                <span class="title2">Members</span>
-            </div>
-            <div class="swiper4 mySwiper4">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide swiper-slide4">
-                    <img src="./imgs/members/member1.jpg">
-                    <div class="memname">
-                        <b>Umedgiri Goswami</b>
-                        <span>Lead</span>
+                <div class="aboutus">
+                    <div>
+                        <p style="font-size: 1.2rem;">We are a non-profit charitable trust dedicated to making a positive
+                            impact on the lives of those in need. Since our inception in 2003, we have been working
+                            tirelessly to provide education, cow welfare, and other charitable services to the communities
+                            in Mithapur, Dwarka, Gujarat.</p>
+                        <br>
+                        <p style="font-size: 1.2rem;">
+                            <b>Our Mission</b><br><br>
+
+                            Our mission is to provide educational opportunities for children, promote cow welfare, and
+                            support underserved communities. We believe that education is the key to breaking the cycle of
+                            poverty and creating a brighter future for children. We also believe that cows are gentle and
+                            intelligent creatures that deserve to be treated with respect and compassion. We are committed
+                            to working with communities to improve the lives of cows and promote sustainable cow care
+                            practices.
+
+                        </p>
                     </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide4">
-                    <img src="./imgs/members/member2.png">
-                    <div class="memname">
-                        <b>Hardikgiri Goswami</b>
-                        <span>member1</span>
+                    <img class="logoImg2" src="./imgs/logomain.png" alt="logo">
+                </div>
+            </div>
+            <!-- IMAGE GALLERY -->
+            <div id="Gallary">
+                <div class="title" style=" margin-top: 0;">
+                    <span class="title1">Our</span>
+                    <span class="title2">Services</span>
+                </div>
+                <div class="swiper2 mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM789903.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM517686.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM888754.jpg"></div>
+                        <div class="swiper-slide"><img src="./imgs/SM603131.jpg"></div>
+                    <div></div>
                     </div>
-                  </div>
-                  <div class="swiper-slide swiper-slide4">
-                    <img src="./imgs/members/member3.jpg">
-                    <div class="memname">
-                        <b>Yogeshgiri Goswami</b>
-                        <span>Member2</span>
+                    <div style="margin-top: 10px;" class="swiper-pagination2"></div>
+                </div>
+
+            </div>
+
+            <!-- CERTIFICATES -->
+            <div id="achivements" >
+                <div class="title" style="margin-bottom: 0;" >
+                    <span class="title1">Our</span>
+                    <span class="title2">Achivements</span>
+                </div>
+                <div class="swiper3 mySwiper3" style="margin-bottom: 50px; overflow-x: hidden;">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide3">
+                        <img src="https://cdn.vectorstock.com/i/1000x1000/13/25/vertical-modern-certificate-template-vector-28951325.webp" />
                     </div>
-                  </div>
+                    <div class="swiper-slide swiper-slide3">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-vertical-certificate-of-completion-tem-design-template-0207909b7d8e5335166de993ac8b1f22_screen.jpg?ts=1646483065" />
+                    </div>
+                    <div class="swiper-slide swiper-slide3">
+                        <img src="https://www.shutterstock.com/shutterstock/photos/1540430987/display_1500/stock-vector-vertical-certificate-template-with-ribbon-with-halftone-pattern-and-textured-background-1540430987.jpg" />
+                    </div>
+                    <div class="swiper-slide swiper-slide3">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/vertical-certificate-of-appreciation-template-design-2c5f848bd264516b4f3cda4df9d3f6fd_screen.jpg?ts=1672663137" />
+                    </div>
+                    <div class="swiper-slide swiper-slide3">
+                        <img src="https://previews.123rf.com/images/kitipol/kitipol1609/kitipol160900031/63887241-vertical-certificate-template-diploma-letter-size-vector.jpg" />
+                    </div>
+                    </div>
+                    <div class="swiper-pagination3"></div>
                 </div>
             </div>
+            
+            <!-- Turst Members -->
+            <div id="members">
+                <div class="title" >
+                    <span class="title1">Trust</span>
+                    <span class="title2">Members</span>
+                </div>
+                <div class="swiper4 mySwiper4">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide4">
+                        <img src="./imgs/members/member1.jpg">
+                        <div class="memname">
+                            <b>Umedgiri Goswami</b>
+                            <span>Lead</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide4">
+                        <img src="./imgs/members/member2.png">
+                        <div class="memname">
+                            <b>Hardikgiri Goswami</b>
+                            <span>member1</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide4">
+                        <img src="./imgs/members/member3.jpg">
+                        <div class="memname">
+                            <b>Yogeshgiri Goswami</b>
+                            <span>Member2</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PARTNERS -->
+            <div id="testimonials">
+                <div class="title">
+                    <span class="title1">Testimonials</span>
+                </div>
+                <div class="swiper5 mySwiper5">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r1.jpg" alt="img">
+                            <span class="test-1">John </span>
+                            <span class="test-2" style="text-align: justify;">Before I attended the school supported by this organization, I had no hope for my future. I was stuck in a cycle of poverty and I didn't think I could ever escape. But thanks to the education I received, I am now able to dream of a better future. I am so grateful for the opportunity to learn and grow.</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r2.jpg" alt="img">
+                            <span class="test-1">Mary</span>
+                            <span class="test-2" style="text-align: justify;">I was struggling to make ends meet and I didn't know where to turn for help. But this organization was there for me. They provided me with food, clothing, and shelter until I was able to get back on my feet. I am so grateful for their support.</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r3.webp" alt="img">
+                            <span class="test-1">Michael</span>
+                            <span class="test-2" style="text-align: justify;">This organization is a beacon of hope for our community. They provide essential services to those in need, and they do it with compassion and understanding. I am so proud to be a part of this organization.</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r4.avif" alt="img">
+                            <span class="test-1">Barbara</span>
+                            <span class="test-2" style="text-align: justify;">I have always loved cows, but I never knew how to care for them properly. Thanks to the training I received from this organization, I am now able to provide my cows with the care they deserve. I am so grateful for the help they have given me.</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r1.jpg" alt="img">
+                            <span class="test-1">John </span>
+                            <span class="test-2" style="text-align: justify;">Before I attended the school supported by this organization, I had no hope for my future. I was stuck in a cycle of poverty and I didn't think I could ever escape. But thanks to the education I received, I am now able to dream of a better future. I am so grateful for the opportunity to learn and grow.</span>
+                        </div>
+                        <div class="swiper-slide swiper-slide5">
+                            <img src="./imgs/reviews/r2.jpg" alt="img">
+                            <span class="test-1">Mary</span>
+                            <span class="test-2" style="text-align: justify;">I was struggling to make ends meet and I didn't know where to turn for help. But this organization was there for me. They provided me with food, clothing, and shelter until I was able to get back on my feet. I am so grateful for their support.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination5"></div>
+                </div>
+            </div>
+
+            <!-- DONATION -->
+            <div class="donation" id="donation">
+                <div class="title">
+                    <span class="title1">Donate</span>
+                    <span class="title2">here</span>
+                </div>
+                <div class="aboveQrCode">
+                    <iframe class="iframe"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.424327373072!2d69.09071577361524!3d22.375355540173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3956a3cbfad3b5bb%3A0x65f3adc1c2ad3646!2sSHIV%20FARMHOUSE!5e0!3m2!1sen!2sin!4v1700119574605!5m2!1sen!2sin"
+                        allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="qrcode donation">
+                        <img class="qr" src="./imgs/qr.jpg" alt="">
+                        <button class="dntbtn">pay to UPI</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CONTACT US -->
+            <div class="default" id="contactUs">
+                <div class="title">
+                    <span class="title1">Contact</span>
+                    <span class="title2">us</span>
+                </div>
+                <div class="abovecnt">
+                    <div class="cuCnt">
+                        <div style="display: flex; gap: 10px;">
+                            <img src="./imgs/icons/phone-call.png" alt="">
+                            <p>+91 1234567891</p>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="./imgs/icons/apple.png" alt="">
+                            <p>shivcharitabletrust@gmail.com</p>
+                        </div>
+                        <div style="display: flex; gap: 10px;">
+                            <img src="./imgs/icons/location.png" alt="">
+                            <p>Gopi tadav, Dwarka, Gujarat 395002 </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer style="color: black;" class="nav" style="color: white;">
+                copyrights@2023-2024
+            </footer>
         </div>
 
-        <!-- PARTNERS -->
-        <div id="partners">
-            <div class="title">
-                <span class="title1">Our</span>
-                <span class="title2">Partners</span>
-            </div>
-            <div>
-                
-            </div>
-        </div>
-        
-        <!-- DONATION -->
-        <div class="donation" id="donation">
-            <div class="title">
-                <span class="title1">Donate</span>
-                <span class="title2">here</span>
-            </div>
-            <div class="aboveQrCode">
-                <iframe class="iframe"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.424327373072!2d69.09071577361524!3d22.375355540173956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3956a3cbfad3b5bb%3A0x65f3adc1c2ad3646!2sSHIV%20FARMHOUSE!5e0!3m2!1sen!2sin!4v1700119574605!5m2!1sen!2sin"
-                     allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <div class="qrcode donation">
-                    <img class="qr" src="./imgs/qr.jpg" alt="">
-                    <button class="dntbtn">pay to UPI</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTACT US -->
-        <div class="default" id="contactUs">
-            <div class="title">
-                <span class="title1">Contact</span>
-                <span class="title2">us</span>
-            </div>
-            <div class="cuCnt">
-                <div style="display: flex; gap: 10px;">
-                    <img src="./imgs/icons/phone-call.png" alt="">
-                    <p>+91 1234567891</p>
-                </div>
-                <div style="display: flex; gap: 10px;">
-                    <img src="./imgs/icons/apple.png" alt="">
-                    <p>shivcharitabletrust@gmail.com</p>
-                </div>
-                <div style="display: flex; gap: 10px;">
-                    <img src="./imgs/icons/location.png" alt="">
-                    <p>Gopi tadav, Dwarka, Gujarat 395002 </p>
-                </div>
-            </div>
-        </div>
-
-        <footer style="color: black;" class="nav" style="color: white;">
-            copyrights@2023-2024
-        </footer>
-    </div>
-
-
-    <!-- Swiper JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        dynamicBullets: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
-    var swiper = new Swiper(".mySwiper2", {
-      spaceBetween: 5,
-      centeredSlides: true,
-      autoplay: {
-        delay: 1500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination2",
-        clickable: true,
-        dynamicBullets: true,
-      },
-    });
-    var swiper3 = new Swiper(".mySwiper3", {
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
-        coverflowEffect: {
-            rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: true,
-        },
-        pagination: {
-            el: ".swiper-pagination3",
-            dynamicBullets: true,
-            clickable: true,
-        },
-    });
-    var swiper4 = new Swiper(".mySwiper4", {
-        effect: "cards",
-        grabCursor: true,
-    });
-  </script>
-
-
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            
+            });
+            var swiper = new Swiper(".mySwiper2", {
+            spaceBetween: 5,
+            centeredSlides: true,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination2",
+                clickable: true,
+                dynamicBullets: true,
+            },
+            });
+            var swiper3 = new Swiper(".mySwiper3", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                initialSlide: 2,
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination3",
+                    dynamicBullets: true,
+                    clickable: true,
+                },
+            });
+            var swiper4 = new Swiper(".mySwiper4", {
+                effect: "cards",
+                grabCursor: true,
+            });
+            var swiper5 = new Swiper(".mySwiper5", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 20,
+                grabCursor: true,
+                initialSlide: 2,
+                pagination: {
+                el: ".swiper-pagination5",
+                clickable: true,
+                dynamicBullets: true,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+            
+            
+            const targetElement = document.getElementById('achivements');
+            const gallary = document.getElementById('Gallary');
+            const members = document.getElementById('members');
+            const testimonials = document.getElementById('testimonials');
+            const donation = document.getElementById('donation');
+            const about = document.getElementById('about');
+            const observer = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                    targetElement.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            const observer2 = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                    members.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            const observer3 = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                    gallary.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            const observer4 = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                    testimonials.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            const observer5 = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        donation.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            const observer6 = new IntersectionObserver((entries) => {
+                for (const entry of entries) {
+                    if (entry.isIntersecting) {
+                        about.style.transform = 'translateY(0)';
+                    }
+                }
+                }, {
+                root: null,
+                threshold: 0
+            });
+            
+            const scrollToTopBtn = document.getElementById('sttbtn');
+            const observer8 = new IntersectionObserver((entries) => {
+            for (const entry of entries) {
+                if (window.scrollY > 200) { // Set the scroll threshold here
+                    scrollToTopBtn.style.opacity = 1;
+                } else {
+                    scrollToTopBtn.style.opacity = 0;
+                }
+            }
+            }, {
+                root: null,
+                threshold: 0
+            });
+            window.addEventListener('scroll', () => {
+            if (window.scrollY < 200) { // Check if at the top of the page
+                scrollToTopBtn.style.opacity = 0; // Hide the button
+            }
+            if(window.scrollY===0){
+                targetElement.style.transform = 'translateY(500px)';
+                members.style.transform = 'translateY(500px)';
+                gallary.style.transform = 'translateY(500px)';
+                testimonials.style.transform = 'translateY(500px)';
+                donation.style.transform = 'translateY(500px)';
+                // about.style.transform = 'translateY(300px)';
+            }
+            });
+            observer.observe(targetElement);
+            observer2.observe(members)
+            observer3.observe(gallary)
+            observer4.observe(testimonials);
+            observer5.observe(donation);
+            observer6.observe(about);
+            observer8.observe(document.body);
+        </script>
+    </body>
 </html>
-
-<!--side menu https://codesandbox.io/p/sandbox/yddn27?file=%2Findex.html%3A1%2C1 -->

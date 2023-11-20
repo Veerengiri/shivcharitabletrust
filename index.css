@@ -122,6 +122,23 @@ html {
 /* .default{
     height: 100dvh;   
 } */
+.sttbtn{
+    opacity: 0;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    text-decoration: none;
+    color: white;
+}
+.sttbtn2{
+    bottom: 70px !important;
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+    text-decoration: none;
+    color: white;
+}
 .swiper {
     width: 600px;
     height: 300px;
@@ -129,11 +146,15 @@ html {
 #about{
     padding-top: 70px;
     margin-top: -70px;
+    transform: translateY(300px);
+    transition: transform 0.5s ease-in-out;
 }
 #donation{
     padding-top: 70px;
     margin-top: -70px;
     padding: 20px;
+    transform: translateY(500px);
+    transition: transform 0.5s ease-in-out;
 }
 .donation{
     display: flex;
@@ -293,6 +314,12 @@ body {
     overflow-x: hidden;
     padding-top: 70px;
     margin-top: -70px;
+    transform: translateY(500px);
+    transition: transform 0.5s ease-in-out;
+}
+#testimonials{
+    transform: translateY(500px);
+    transition: transform 0.5s ease-in-out;
 }
 .iframe{
     border:2px solid var(--blue); width: 600px; height: 450px;
@@ -300,6 +327,7 @@ body {
 }
 
 /* CONTACT US */
+
 #contactUs img{
     height: 30px;
 }
@@ -307,12 +335,26 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 50px;
+    padding: 0px calc(100vw - 90%);
     /* margin-left: 50px; */
     justify-content: center;
+    
 }
 .cuCnt p{
     font-size: 1.4rem;
+}
+.cuCnt2{
+    position: fixed;
+    bottom: 35%;
+    left: 0px;
+    z-index: 20;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    /* background-color: white; */
+}
+.cuCnt2 img{
+    height: 30px;
 }
 .toggleicon{
     display: none;
@@ -356,6 +398,8 @@ body {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
+    transform: translateY(500px);
+    transition: transform 0.5s ease-in-out;
 }
 .swiper4 {
     width: 240px;
@@ -405,6 +449,59 @@ color: black;
     color: white;
 }
 
+
+/* TESTIMONIALS */
+.swiper5 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+  }
+
+.swiper-slide5 {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center ;
+    width: 280px !important;
+    height: 380px !important;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 8px;
+    /* border: 1px solid var(--blue); */
+}
+
+
+.swiper-slide5 img {
+    display: block;
+    object-fit: cover;
+    height: 160px;
+    width: 160px;
+    border-radius: 16px;
+    /* border: 1px solid black; */
+}
+.swiper-pagination5{
+    margin-left: 50dvw;
+    margin-top: 10px;
+}
+.test-1{
+    font-weight: bold;
+}
+.test-2{
+    font-weight: lighter;
+    margin-top: 10px;
+}
+.abovecnt{
+    display: flex;
+    /* justify-content: space-around; */
+}
+#achivements {
+    transform: translateY(500px);
+    transition: transform 0.5s ease-in-out;
+}
 @media only screen and (max-width: 1150px ){
     .nav2{
         display: none;
