@@ -39,7 +39,7 @@
             setTimeout(() => {
                 const targetElement = document.getElementById(id);
                 targetElement.scrollIntoView();
-            }, 1000);
+            }, 1500);
         }
     </script>
     <body>
@@ -76,12 +76,12 @@
                     <a onclick="st('members',500)">Members</a>
                     <a onclick="st('testimonials',500)">Testimonials</a>
                     <a onclick="st('contactUs',500)">Contact Us</a>
-                    <button id="dntbtn4"  onclick="st('donation',500)" class="dntbtn" >
+                    <!-- <button id="dntbtn4"  onclick="st('donation',500)" class="dntbtn" >
                         Contribute
-                    </button>
+                    </button> -->
                 </nav>
                 <div  id="btn" style="display: flex;justify-content: center;align-items: center;">
-                    <a id="dntbtn" class="dntbtn" href="#donation" style="margin-right: 20px; text-decoration: none;">
+                    <a id="dntbtn" class="dntbtn" href="/donate.html" style="margin-right: 20px; text-decoration: none;">
                         Contribute
                     </a>
                     <img src="./imgs/icons/menu.png" onclick="opennav()" height="40px" >
@@ -182,6 +182,38 @@
                     <div class="swiper-pagination3"></div>
                 </div>
             </div>
+
+            <!-- OUR PARTNERS -->
+            <div id="partners">
+                <div class="title">
+                    <span class="title1">Associate</span>
+                    <span class="title2">Partners</span>
+                </div>
+                <div class="swiper5 mySwiper6">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/gopal.png" alt="img">
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/Savji-Dholakia.jpg" alt="img">
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/balaji.png" alt="img">
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/gopal.png" alt="img">
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/Savji-Dholakia.jpg" alt="img">
+                        </div>
+                        <div class="swiper-slide swiper-slide6">
+                            <img src="./imgs/partners/balaji.png" alt="img">
+                        </div>
+                        
+                    </div>
+                    <div class="swiper-pagination6"></div>
+                </div>
+            </div>
             
             <!-- Turst Members -->
             <div id="members">
@@ -215,6 +247,8 @@
                     </div>
                 </div>
             </div>
+
+            
 
             <!-- PARTNERS -->
             <div id="testimonials">
@@ -304,7 +338,6 @@
                 copyrights@2023-2024
             </footer>
         </div>
-
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             var swiper = new Swiper(".mySwiper", {
@@ -365,9 +398,25 @@
                 grabCursor: true,
                 initialSlide: 2,
                 pagination: {
-                el: ".swiper-pagination5",
-                clickable: true,
-                dynamicBullets: true,
+                    el: ".swiper-pagination5",
+                    clickable: true,
+                    dynamicBullets: true,
+                },
+                autoplay: {
+                    delay: 2500,
+                    disableOnInteraction: false,
+                },
+            });
+            var swiper6 = new Swiper(".mySwiper6", {
+                slidesPerView: "auto",
+                centeredSlides: true,
+                spaceBetween: 20,
+                grabCursor: true,
+                initialSlide: 2,
+                pagination: {
+                    el: ".swiper-pagination6",
+                    clickable: true,
+                    dynamicBullets: true,
                 },
                 autoplay: {
                     delay: 2500,

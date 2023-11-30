@@ -2,6 +2,20 @@ html {
     scroll-behavior: smooth;
     font-family: 'Roboto Condensed', sans-serif;
 }
+.homeBtn{
+    background-color: var(--blue);
+    border: none;
+    padding: 0px;
+    border-radius: 100%;
+    height: 50px;
+    margin: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.homeBtn:hover{
+    padding: 2px;
+}
 :root {
     /* --blue: rgb(4,192,253); */
     --blue: #00609e;
@@ -90,6 +104,7 @@ html {
     padding: 32px 8px;
     transition: all .25s;
     border-bottom: 5px solid transparent;
+    cursor: pointer;
 }
 
 #navactive{
@@ -146,14 +161,14 @@ html {
 #about{
     padding-top: 70px;
     margin-top: -70px;
-    transform: translateY(300px);
+    transform: translateY(200px);
     transition: transform 0.5s ease-in-out;
 }
 #donation{
     padding-top: 70px;
     margin-top: -70px;
     padding: 20px;
-    transform: translateY(500px);
+    transform: translateY(200px);
     transition: transform 0.5s ease-in-out;
 }
 .donation{
@@ -314,11 +329,11 @@ body {
     overflow-x: hidden;
     padding-top: 70px;
     margin-top: -70px;
-    transform: translateY(500px);
+    transform: translateY(300px);
     transition: transform 0.5s ease-in-out;
 }
 #testimonials{
-    transform: translateY(500px);
+    transform: translateY(300px);
     transition: transform 0.5s ease-in-out;
 }
 .iframe{
@@ -397,7 +412,7 @@ body {
     align-items: center;
     flex-direction: column;
     margin-bottom: 50px;
-    transform: translateY(500px);
+    transform: translateY(300px);
     transition: transform 0.5s ease-in-out;
 }
 .swiper4 {
@@ -498,7 +513,7 @@ color: black;
     /* justify-content: space-around; */
 }
 #achivements {
-    transform: translateY(500px);
+    transform: translateY(300px);
     transition: transform 0.5s ease-in-out;
 }
 #close{
@@ -507,6 +522,22 @@ color: black;
 #dntbtn4{
     display: none;
 }
+
+/* ASOCIATED PARTNERS PARTNERS */
+.swiper-slide6 {
+    background: #fff;
+    height: 150px !important;
+    width: 200px !important;
+    /* padding: 10px; */
+    /* border: 1px solid var(--blue); */
+}
+.swiper-slide6 img{
+    height: 150px;
+    width: 200px;
+    object-fit: contain !important;
+}
+
+
 @media only screen and (max-width: 1150px ){
     .nav2{
         /* display: none; */
