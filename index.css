@@ -705,4 +705,7 @@ body {
     #contactUs img{
         height: 25px;
     }
+    .sttbtn{
+        right: 25px;
+    }
 }
