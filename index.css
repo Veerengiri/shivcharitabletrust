@@ -362,7 +362,7 @@ body {
 }
 .cuCnt2{
     position: fixed;
-    bottom: 35%;
+    top: 45vh;
     left: 0px;
     z-index: 20;
     display: flex;
@@ -676,6 +676,9 @@ body {
     .swiper-pagination2{
         margin-left: 50dvw;
     }
+    .cuCnt p{
+        font-size: 1rem !important;
+    }
 }
 @media only screen and (max-width: 500px) {
     #dntbtn{
@@ -697,7 +700,7 @@ body {
         margin: 0;
     }
     .cuCnt p{
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     #contactUs img{
         height: 25px;
