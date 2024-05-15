@@ -2,6 +2,9 @@ html {
     scroll-behavior: smooth;
     font-family: 'Roboto Condensed', sans-serif;
 }
+body{
+    overflow-y: hidden;
+}
 .homeBtn{
     background-color: var(--blue);
     border: none;
@@ -54,6 +57,42 @@ body{
 *{
     margin: 0;
     padding: 0;
+}
+
+#Loader{
+    position: fixed;
+    height: 100dvh;
+    width: 100dvw;
+    z-index: 100 !important;
+    background-color: var(--bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.progress-bar-container {
+    width: 100dvw;
+    height: 5px;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+}
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--blue);
+    width: 0%; /* Initial width */
+    animation: progress-bar-fill 4s ease-in-out forwards;
+}
+
+@keyframes progress-bar-fill {
+    from { width: 0%; }
+    to { width: 100%; }
+}
+#Loader img{
+    height:300px;
 }
 
 .nav {
@@ -707,5 +746,13 @@ body {
     }
     #contactUs img{
         height: 25px;
+    }
+    #Loader img{
+        width:250px;
+        height: auto;
+    }
+    .logoImg2{
+        width: 250px;
+        height: auto;
     }
 }

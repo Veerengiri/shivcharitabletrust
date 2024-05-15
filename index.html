@@ -15,7 +15,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;500;600;700&display=swap"
             rel="stylesheet">
-        <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     </head>
     <script>
         // let isstable = 
@@ -43,6 +42,13 @@
         }
     </script>
     <body>
+        
+        <div id="Loader">
+            <div class="progress-bar-container">
+                    <div class="progress-bar"></div>
+            </div>
+            <img src="./imgs/logomain.png">
+        </div>
         <div class="cuCnt2">
             <a href="https://www.instagram.com/shiv_charitabletrust?igsh=ZTM4ZDRiNzUwMw== " target="_blank" style="display: flex; gap: 10px;">
                 <img src="./imgs/icons/instagram.png" alt="Insta">
@@ -381,6 +387,11 @@
         </div>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
+            
+            setTimeout(() => {
+                document.getElementById("Loader").style.display="none";
+                document.body.style.overflowY="unset"
+            }, 4000);
             var swiper = new Swiper(".mySwiper", {
             spaceBetween: 30,
             centeredSlides: true,
