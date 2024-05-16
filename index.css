@@ -84,7 +84,7 @@ body{
     height: 100%;
     background-color: var(--blue);
     width: 0%; /* Initial width */
-    animation: progress-bar-fill 4s ease-in-out forwards;
+    animation: progress-bar-fill 5s ease-in-out forwards;
 }
 
 @keyframes progress-bar-fill {
@@ -351,9 +351,9 @@ body {
 .qrcode:hover{
     box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.7);
 }
-.qrcode:hover  .qr {
+/* .qrcode:hover  .qr {
     scale: 1.05;
-}
+} */
 .qr{
     width: 300px;
     z-index: 2;
@@ -532,11 +532,11 @@ body {
     display: flex !important;
     justify-content: flex-start;
     align-items: center ;
-    width: 280px !important;
-    height: 380px !important;
+    width: 300px !important;
+    height: 250px !important;
     flex-direction: column;
     gap: 10px;
-    padding:24px;
+    /* padding:24px; */
     border-radius: 8px;
     /* border: 1px solid var(--blue); */
 }
