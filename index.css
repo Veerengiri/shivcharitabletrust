@@ -84,7 +84,7 @@ body{
     height: 100%;
     background-color: var(--blue);
     width: 0%; /* Initial width */
-    animation: progress-bar-fill 5s ease-in-out forwards;
+    animation: progress-bar-fill 3s ease-in-out forwards;
 }
 
 @keyframes progress-bar-fill {
@@ -180,6 +180,7 @@ body{
     height: 100dvh;   
 } */
 .sttbtn{
+    display: none;
     opacity: 0;
     position: fixed;
     bottom: 10px;
@@ -187,6 +188,7 @@ body{
     z-index: 100;
     text-decoration: none;
     color: white;
+
 }
 .sttbtn2{
     bottom: 70px !important;
