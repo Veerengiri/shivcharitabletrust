@@ -41,7 +41,10 @@
         }
     </script>
     <script>
-        // let isstable = 
+        // let isstable =
+        function closeNews() {
+            document.getElementById('news').style.display = 'none';
+        }
         let isnavmin = window.innerWidth>1050? false: true;
         function closenav (){
             document.getElementById('slidenav').style.display='none';
@@ -70,16 +73,21 @@
         }
     </script>
     <body>
+        <div id="news">
+            <div style="position: fixed; top: 20px; border: 1px solid black; border-radius: 100%; padding: 0 10px; font-weight: lighter; cursor: pointer; right: 20px; background-color: transparent;  font-size: 2rem;" onclick="closeNews()">X</div>
+            <img src="./imgs/h1.jpg" alt="news">
+        </div>
         <div id="largeimg" style="z-index: 200; position: fixed; top: 0; left: 0; background: black; height: 100dvh; width: 100dvw; justify-content: center; align-items: center;">
             <img id="showimg" style="max-width: 100dvw; max-height: 100dvh;" />
             <button style="position: fixed; top: 20px; right: 20px; border-radius: 100%; color: white; background-color: black; font-size: 2rem;" onclick="closeImg()">X</button>
         </div>
         <div id="Loader">
             <div class="progress-bar-container">
-                    <div class="progress-bar"></div>
+                <div class="progress-bar"></div>
             </div>
-            <img  src="./imgs/logomain.png">
+            <img  src="./imgs/logomain.webp">
         </div>
+        
         <div class="cuCnt2">
             <a href="https://www.instagram.com/shiv_charitabletrust?igsh=ZTM4ZDRiNzUwMw== " target="_blank" style="display: flex; gap: 10px;">
                 <img src="./imgs/icons/instagram.png" alt="Insta">
@@ -97,7 +105,7 @@
             <!-- NAVBAR -->
             <nav class="nav mainnav" >
                 <div class="logomark">
-                    <img  class="logoImg" src="./imgs/logosmall.png" alt="logo">
+                    <img  class="logoImg" src="./imgs/logosmall.webp" alt="logo">
                     Shree Shiv<br>Education and<br>Charitable Trust
                 </div>
                 <!-- <h2>Shree Shiv Education and Charitable Trust</h2>   -->
@@ -124,24 +132,23 @@
 
             <div  class="swiper mySwiper" id="home">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s23.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/other/mainSlider.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s11.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s7.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s10.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s13.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s16.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s33.jpg"></div>    
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s21.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s22.jpg"></div>
-                    <!-- <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s34.jpg"></div> -->
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s17.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s19.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s15.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s12.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s14.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s18.jpg"></div>
-                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s20.jpg"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s23.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/other/mainSlider.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s11.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s10.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s33.webp"></div>    
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s21.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s22.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s13.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s17.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s16.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s7.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s15.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s12.webp"></div>
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s19.webp"></div>
+                    <!-- <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s14.webp"></div> -->
+                    <!-- <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s18.webp"></div> -->
+                    <div class="swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s20.webp"></div>
                 </div>
                 <!-- <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div> -->
@@ -149,7 +156,7 @@
             </div>
 
             <!-- ABOUT US -->
-            <div id="about">
+            <div id="about" style=" padding-bottom: 50px;">
                 <div class="title">
                     <span class="title1">About</span>
                     <span class="title2">Us</span>
@@ -160,7 +167,7 @@
                         <p style="font-size: 1.2rem;">
                             <b>Our Mission</b><br><br>Our mission is to empower people through education, compassion, and support. As a non-profit trust, we provide scholarships, quality education, healthcare, and community-focused initiatives like Samuhik Vivah. Our cow welfare programs complement our holistic approach to uplifting lives, a commitment we have upheld since 2003.</p>
                     </div>
-                    <img class="logoImg2" src="./imgs/logomain.png" alt="logo">
+                    <img class="logoImg2" src="./imgs/logomain.webp" alt="logo">
                 </div>
             </div>
 
@@ -172,25 +179,17 @@
                 </div>
                 <div class="swiper2 mySwiper2">
                     <div class="swiper-wrapper">
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/s1.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/mainSlider.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/s2.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s8.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s2.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s1.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s6.jpg"></div>
-                        <!-- <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/achivements/c11.jpg"></div> -->
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s4.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s3.jpg"></div>
-                        <!-- <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s24.jpg"></div> -->
-                        <!-- <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s9.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s31.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s32.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s30.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s27.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s26.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s28.jpg"></div>
-                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s29.jpg"></div> -->
+                         <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/s1.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/h2.jpg"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/mainSlider.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/other/s2.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s8.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s2.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s1.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s6.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s4.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s3.webp"></div>
+                        <div class="fixhight swiper-slide"><img class="openLargeimg" src="/imgs/mainSlider/s26.webp"></div>
                     </div>
                     <div style="margin-top: 10px;" class="swiper-pagination2"></div>
                 </div>
@@ -198,7 +197,7 @@
             </div>
 
             <!-- CERTIFICATES -->
-            <div id="achivements" >
+            <div id="achivements" style="margin-top: 0px;">
                 <div class="title" style="margin-bottom: 0;" >
                     <span class="title1">Our</span>
                     <span class="title2">Achivements</span>
@@ -206,41 +205,41 @@
                 <div class="swiper3 mySwiper3" style="margin-bottom: 50px; overflow-x: hidden;">
                     <div class="swiper-wrapper">
                     
-                        <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c1.jpg" />
+                       <div class="swiper-slide swiper-slide3">
+                            <img class="openLargeimg" src="/imgs/achivements/c1.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c3.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c3.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c5.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c5.webp" />
                         </div>
                         <!-- <div class="swiper-slide swiper-slide3">
                             <img class="openLargeimg" src="/imgs/achivements/c11.jpg" />
                         </div> -->
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c9.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c9.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c2.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c2.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c8.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c8.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c4.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c4.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c6.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c6.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c12.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c12.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c7.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c7.webp" />
                         </div>
                         <div class="swiper-slide swiper-slide3">
-                            <img class="openLargeimg" src="/imgs/achivements/c10.jpg" />
+                            <img class="openLargeimg" src="/imgs/achivements/c10.webp" />
                         </div>
                     </div>
                     <div class="swiper-pagination3"></div>
@@ -255,66 +254,69 @@
                 </div>
                 <div class="swiper4 mySwiper40">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w13.jpg">
+                       <div class="swiper-slide swiper-slide4">
+                            <img class="openLargeimg" src="./imgs/h1.jpg">
+                        </div>
+                       <div class="swiper-slide swiper-slide4">
+                            <img class="openLargeimg" src="./imgs/OurWork/w13.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w14.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w14.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w15.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w15.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w6.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w6.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w2.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w2.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w3.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w3.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w4.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w4.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w5.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w5.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w1.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w1.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w7.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w7.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w8.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w8.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w9.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w9.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w10.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w10.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w11.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w11.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w16.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w16.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w17.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w17.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w18.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w18.webp">
                         </div>
                         <div class="swiper-slide swiper-slide4">
-                            <img class="openLargeimg" src="./imgs/OurWork/w12.jpg">
+                            <img class="openLargeimg" src="./imgs/OurWork/w12.webp">
                         </div>
                     </div>
                 </div>
             </div>
             
             <!-- PARTNERS -->
-            <div id="testimonials">
+            <div id="testimonials" style="">
                 <div class="title">
                     <span class="title1">Testimonials</span>
                 </div>
@@ -331,7 +333,7 @@
                             <!-- <span class="test-2" style="text-align: justify;">I was struggling to make ends meet and I didn't know where to turn for help. But this organization was there for me. </span> -->
                         </div>
                         <div class="swiper-slide swiper-slide5">
-                            <img class="openLargeimg" style="width: 300px; height: 200px;" src="/imgs/other/s3.jpg" >
+                            <img class="openLargeimg" style="width: 300px; height: 200px;" src="/imgs/other/s3.webp" >
                             <span class="test-1">Surat, Gujarat</span>
                             <!-- <span class="test-2" style="text-align: justify;">I was struggling to make ends meet and I didn't know where to turn for help. But this organization was there for me. </span> -->
                         </div>
@@ -363,8 +365,9 @@
                     </div>
                 </div>
             </div>
+
             <!-- DONATION -->
-            <div class="donation" id="donation">
+            <div class="donation" id="donation"  style="">
                 <div class="title">
                     <span class="title1">Donate</span>
                     <span class="title2">here</span>
@@ -375,8 +378,8 @@
                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                     <div class="qrcode donation">
-                        <h2 style="margin-top: 20px;">Scan QR to Donate</h2>
-                        <img class="qr" src="./imgs/shivQr2.jpg" alt="QrCode">
+                        <h2 style="">Scan QR to Donate</h2>
+                        <img class="qr" src="./imgs/shivQr2.webp" alt="QrCode">
                         <b style="margin: 10px 0;">UPI: shris98240332@barodampay</b>
                         <!-- <a href="upi://pay?pa=shris98240332@barodampay&mc=&tn=UPI&am=&cu=INR" class="dntbtn" style="text-decoration: none;">Pay to UPI</a> -->
                     </div>
