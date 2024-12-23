@@ -749,6 +749,9 @@ body {
     #dntbtn{
         display: none;
     }
+    #news img{
+        width: 300px;
+    }
     #slidenav{
         width: 100%;
         top: 80px;
